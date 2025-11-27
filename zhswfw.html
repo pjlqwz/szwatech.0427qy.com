@@ -1,0 +1,632 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>智慧水务服务</title>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="keywords" content="智慧水务,水务科技,智慧原水,智慧厂站,智慧二供,智慧供水调度,智慧排水防汛,智慧流域">
+<meta name="description" content="深圳市水务科技有限公司伴随深圳特区和深圳环境水务集团一路成长，专业深耕水务自控、智慧化、数字化建设，对水务行业有深刻理解，为水务企业提供定制化IT和信息系统服务，拥有完善的自主研发体系及100多项专利和软件著作权，融合应用物联网、云计算、大数据、人工智能等技术，构建了涉水事务全流程智慧化解决方案、软件系统平台、软硬件一体化产品及服务体系，可全面支撑水务行业客户实现从源头到龙头，从污水处理到流域环境治理全方位一体化、智慧化管理。">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,height=device-height,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="author" content="Joymagic - https://www.szmynet.com">
+<link rel="Shortcut Icon" href="/storage/other/20241010/1728526695849285.ico">
+<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+<link rel="stylesheet" type="text/css" href="static/css/animate.css">
+<link rel="stylesheet" type="text/css" href="static/css/common-20251126165743.css">
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery.cookie.js"></script>
+<script src="static/js/wow.js"></script>
+<script src="static/js/common-20251126165743.js"></script>
+<script src="https://www.sz-watech.com/static/admin/layui/layui.all.js"></script>
+<script src="static/js/admin.js"></script>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="static/css/pages-20251126165746.css">
+</head>
+
+<body class="Lucency noGap">
+    <!-- Header -->
+    <div class="Header">
+        <div class="contain clearFix">
+            <a href="index.html" class="Header-logo">
+                <img src="static/picture/logo.svg" alt="" class="s">
+                <img src="static/picture/logoH.svg" alt="" class="h">
+            </a>
+            <div class="Header-navclick clearFix"><span></span></div>
+            <div class="Header-zixun flex">
+                <a href="hqfa.html" class="Header-zixun-btn flex-center ts4">
+                    <div class="icon flex-center pos">
+                        <img src="static/picture/zixun-icon3.png" class="pc" alt="">
+                        <img src="static/picture/zixun-icon3H.png" class="mb" alt="">
+                    </div>
+                    <div class="title fs15">获取方案</div>
+                </a>
+            </div>
+            <div class="Header-search">
+                <div class="Header-search-click"></div>
+                <div class="Header-search-item">
+                    <div class="contain">
+                        <form action="/search" method="get">
+                            <button type="submit" id="searchSubmit"></button>
+                            <input type="text" name="keyword" id="searchText" placeholder="搜索..." autocomplete="off">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="Header-lang">
+                <a href="javascript:void(0);" class="Header-lang-menu"><i class="icon icon-w0412"></i><span>语言选择</span></a>
+                <div class="Header-lang-more">
+                    <a href="index.html" class="cn"><span>中文</span></a>
+                    <a href="index1.html" class="en"><span>EN</span></a>
+                </div>
+            </div>
+            <div class="Header-navbar clearFix">
+                <ul class="navbarScroll">
+                    <!-- 选中 li 添加class="active" -->
+                    <li class=""><a href="index.html" class="Header-menu">首页</a></li>
+                    <!-- 方案和产品的下拉不一样 -->
+                    
+                    <li class="Header-solution ">
+                        <a href="solution.html" class="Header-menu">解决方案</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            <div class="Header-solution-wrap">
+                                <div class="Header-solution-data">
+                                    <div class="title">涉水事务全流程智慧化解决方案</div>
+                                    <div class="lists">
+                                        <div class="ul">
+                                            
+                                            <div class="li"><a href="solution.html#item1">智慧原水预警管控解决方案</a></div>
+                                            
+                                            <div class="li"><a href="300.html">智慧厂站解决方案</a></div>
+                                            
+                                            <div class="li"><a href="gsqlcddjjfa.html">供水全流程调度解决方案</a></div>
+                                            
+                                            <div class="li"><a href="egbfzhhjjfa.html">二供运维智慧化解决方案</a></div>
+                                            
+                                            <div class="li"><a href="307.html">云客服解决方案</a></div>
+                                            
+                                            <div class="li"><a href="308.html">城市排水防汛解决方案</a></div>
+                                            
+                                            <div class="li"><a href="lyzlqyszhhjjfa.html">流域治理全要素智慧化解决方案</a></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Header-solution-imgs">
+                                    
+                                    <a href="303.html">
+                                        <div class="img"><img src="https://www.sz-watech.com/storage/image/20241014/1728871445224217.webp" alt=""></div>
+                                        <div class="text lm1">智慧水厂2.0丨深圳西部首座水厂迈进智慧新时代</div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="Header-product ">
+                        <a href="/hardware" class="Header-menu">WATECH产品中心</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            <div class="Header-product-wrap">
+                                
+                                <div class="item">
+                                    <div class="Header-product-data">
+                                        <div class="title"><a href="/factory#pro1">厂站智能工艺系列</a></div>
+                                        <div class="lists">
+                                            <div class="ul">
+                                                
+                                                <div class="li"><a href="314.html">水厂智能投药产品</a></div>
+                                                
+                                                <div class="li"><a href="312.html">智能曝气系统</a></div>
+                                                
+                                                <div class="li"><a href="311.html">设备预测性维护产品与管理服务</a></div>
+                                                
+                                                <div class="li"><a href="310.html">智能水平衡系统</a></div>
+                                                
+                                                <div class="li"><a href="234.html">浮游动物(剑水蚤)在线监测仪</a></div>
+                                                
+                                                <div class="li"><a href="334.html">藻类在线监测平台</a></div>
+                                                
+                                                <div class="li"><a href="233.html">智能泵站控制一体机</a></div>
+                                                
+                                                <div class="li"><a href="232.html">二供节能降耗智能终端产品</a></div>
+                                                
+                                                <div class="li"><a href="231.html">智能控制柜</a></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="Header-product-data">
+                                        <div class="title"><a href="/water-affairs#pro2">水务智能监测系列</a></div>
+                                        <div class="lists">
+                                            <div class="ul">
+                                                
+                                                <div class="li"><a href="323.html">消火栓智能监测设备</a></div>
+                                                
+                                                <div class="li"><a href="322.html">智能安全帽</a></div>
+                                                
+                                                <div class="li"><a href="321.html">智能井盖</a></div>
+                                                
+                                                <div class="li"><a href="320.html">数据采集终端（RTU）</a></div>
+                                                
+                                                <div class="li"><a href="319.html">多参数水质监测仪</a></div>
+                                                
+                                                <div class="li"><a href="318.html">排水液位监测设备</a></div>
+                                                
+                                                <div class="li"><a href="317.html">排水流量监测设备</a></div>
+                                                
+                                                <div class="li"><a href="316.html">供水压力监测设备</a></div>
+                                                
+                                                <div class="li"><a href="315.html">智能探漏产品</a></div>
+                                                
+                                                <div class="li"><a href="324.html">高频压力在线监测仪</a></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="Header-product-data">
+                                        <div class="title"><a href="software.html">智慧水务软件产品</a></div>
+                                        <div class="lists">
+                                            <div class="ul">
+                                                
+                                                <div class="li"><a href="software.html">企业数字化管理类</a></div>
+                                                
+                                                <div class="li"><a href="software.html">客户服务类</a></div>
+                                                
+                                                <div class="li"><a href="software.html">生产运营类</a></div>
+                                                
+                                                <div class="li"><a href="software.html">基础支持类</a></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="active">
+                        <a href="znxtjc.html" class="Header-menu">集成与服务</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="znxtjc.html">智能系统集成</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="">智慧水务服务</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="">
+                        <a href="zhczal.html" class="Header-menu">典型案例</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="zhczal.html">智慧厂站</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="zhlyal.html">智慧流域</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="szgcal.html">市政工程</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="">
+                        <a href="news.html" class="Header-menu">新闻中心</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="gsdt.html">公司动态</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="hyzx.html">行业活动</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="mtbd.html">媒体报道</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="">
+                        <a href="qyjs.html" class="Header-menu">关于我们</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="qyjs.html">企业介绍</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="zhzc.html">智慧征程</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="ppgs.html">品牌故事</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="hzts.html">合作探索</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Container -->
+    <div class="Container">
+        
+
+<div class="pagesTop pos">
+
+    <div class="pagesBan pos">
+
+        <div class="pagesBan-bg">
+            <img src="https://www.sz-watech.com/storage/image/20241101/1730451270578202.jpg" alt="">
+            <video src="" autoplay loop preload="auto" muted x-webkit-airplay="true" airplay="allow" webkit-playsinline="true" playsinline="true" x5-video-player-fullscreen="true" x5-video-player-type="h5" x5-video-orientation="portraint"></video>
+        </div>
+
+        <div class="pagesBan-con">
+
+            <div class="contain flex-center white">
+
+                <div class="title fs48 fob">
+	智慧水务服务
+</div>
+<div class="text fs18 mt10">
+	提供水务场景全方位、全周期的专业服务
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="pagesNav">
+
+        <div class="contain">
+
+            <div class="pagesNav-list flex-center white fs18">
+
+            	
+
+                <a href="znxtjc.html" class=" item flex-center pos"><span>智能系统集成</span></a>
+
+                
+
+                <a href="" class="active item flex-center pos"><span>智慧水务服务</span></a>
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        <div class="sevice-view pb100">
+            <div class="contain">
+                <div class="serList">
+                    
+                    <div class="serItem mt100">
+                        <div class="serItem-img pos">
+                            <div class="img"><img src="https://www.sz-watech.com/static/home/default/images/pages/serImg1.jpg" alt=""></div>
+                            <div class="title fs36 white fob">厂站智慧化水平评估</div>
+                        </div>
+                        <div class="serItem-con">
+                            <ul class="serItem-num flex mt30">
+	<li class="mt20">
+		<div class="num fs48 coh fob">
+			5座
+		</div>
+		<div class="text fs16 lh24 fob">
+			已对深圳市5座厂水厂水质净化厂进行完整评估
+		</div>
+		<div class="text2 fs16 lh24">
+			梅林水厂 蛇口水质净化厂 ...
+		</div>
+	</li>
+	<li class="mt20">
+		<div class="num fs48 coh fob">
+			7座
+		</div>
+		<div class="text fs16 lh24 fob">
+			正在进行深圳市 7 座水厂水质净化厂的评估，已形成初步报告
+		</div>
+		<div class="text2 fs16 lh24">
+			红木山水厂 埔地吓水质净化厂三期 ...
+		</div>
+	</li>
+</ul>
+<div class="serItem-text fs16 lh24 br mt30">
+	<p>
+		基于深圳环境水务集团智慧厂站建设技术标准，从五个关键评价维度出发，评估厂站智慧化建设水平，满足建设方、管理方、集成方的业务需求。
+	</p>
+</div>
+<div class="serItem-list-box flex">
+	<ul class="serItem-list fs16 lh32 mt30">
+		<li>
+			生产过程监测与控制
+		</li>
+		<li>
+			创新技术成果应用
+		</li>
+		<li>
+			安防和视频监控
+		</li>
+	</ul>
+	<ul class="serItem-list fs16 lh32 mt30">
+		<li>
+			运营管理数字化
+		</li>
+		<li>
+			网络和信息安全管理
+		</li>
+	</ul>
+</div>
+                        </div>
+                    </div>
+                    
+                    <div class="serItem mt100">
+                        <div class="serItem-img pos">
+                            <div class="img"><img src="static/picture/serImg2.jpg" alt=""></div>
+                            <div class="title fs36 white fob">智慧运维服务</div>
+                        </div>
+                        <div class="serItem-con">
+                            <div class="serItem-text fs16 lh24 br mt30">
+	<p>
+		深圳水务科技公司拥有一支效率高、能力强的智慧水务技术及运营团队，运用积累多年丰富的智慧水务运营及维护经验，为水司提供智慧水务技术及人员支持，避免水司智慧水务建设技术资源不足、项目管控力度不足的风险。
+	</p>
+	<p>
+		<br>
+	</p>
+	<p>
+		在二供业务方面，为深圳环水集团全面规划了深圳市《二供管理标准体系》，提供二供泵房智慧化改造、监管、运维的全流程智慧运营服务，有效提高安全供水与服务保障能力。
+	</p>
+</div>
+<div class="serItem-list-box flex">
+	<ul class="serItem-list fs16 lh32 mt30">
+		<li>
+			厂站自控及安防运维服务
+		</li>
+		<li>
+			二供泵房标准化建设及运维服务
+		</li>
+		<li>
+			在线仪表运维服务
+		</li>
+		<li>
+			机房、核心网络及系统运维服务
+		</li>
+		<li>
+			办公设备、网络系统运维服务
+		</li>
+	</ul>
+	<ul class="serItem-list fs16 lh32 mt30">
+		<li>
+			运维项目资产管理标准化
+		</li>
+		<li>
+			运维项目监控标准化
+		</li>
+		<li>
+			考核激励标准化
+		</li>
+		<li>
+			运维服务流程标准化
+		</li>
+		<li>
+			部门架构标准化
+		</li>
+		<li>
+			服务作业标准化
+		</li>
+	</ul>
+</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- 置顶 -->
+    
+<div class="backTop"></div>
+    <!-- 公告弹窗 -->
+    <div class="SwNotice ">
+        <div class="SwNotice-contain">
+            <div class="SwNotice-close flex-center"><i class="icon icon-w0304"></i></div>
+            <div class="SwNotice-info">
+                <div class="title">温馨提示</div>
+                <div class="text"></div>
+                <div class="other">深圳市水务科技有限公司</div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <svg class="FooterWaves aos-init aos-animate" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto" aos="fade-up">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(229,246,246,0.5)"></use>
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(229,246,246,0.3)"></use>
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(229,246,246,0.1)"></use>
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(229,246,246,1)"></use>
+        </g>
+    </svg>
+    <div class="Footer">
+        <div class="Footer-items">
+            <div class="contain flex">
+                <div class="Footer-more">
+                    <div class="Footer-logo"><a href="index.html"><img src="static/picture/logoH.png" alt=""></a></div>
+                    <div class="Footer-info">
+                        <p>服务热线：</p>
+                        <h6>400-0755-664</h6>
+                        <p>地址：深圳市福田区沙嘴路8号</p>
+                        <p>绿景·红树湾壹号A座37层</p>
+                    </div>
+                    <div class="Footer-code flex">
+                        <div class="item">
+                            <div class="img"><img src="static/picture/code1.jpg" alt=""></div>
+                            <div class="text">官方公众号</div>
+                        </div>
+                        <div class="item">
+                            <div class="img"><img src="static/picture/1740992106898361.jpg" alt=""></div>
+                            <div class="text">合作咨询</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer-navbar">
+                    <ul class="flex">
+                        
+                        <li>
+                            <a href="solution.html" class="Footer-menu">解决方案</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="solution.html#item1">智慧原水预警管控解决方案</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="300.html">智慧厂站解决方案</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="gsqlcddjjfa.html">供水全流程调度解决方案</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="egbfzhhjjfa.html">二供运维智慧化解决方案</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="307.html">云客服解决方案</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="308.html">城市排水防汛解决方案</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="lyzlqyszhhjjfa.html">流域治理全要素智慧化解决方案</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/hardware" class="Footer-menu">WATECH产品中心</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="/hardware">智慧水务软硬件一体化产品</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="software.html">智慧水务软件产品</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="znxtjc.html" class="Footer-menu">集成与服务</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="znxtjc.html">智能系统集成</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="">智慧水务服务</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="zhczal.html" class="Footer-menu">典型案例</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="zhczal.html">智慧厂站</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="zhlyal.html">智慧流域</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="szgcal.html">市政工程</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="news.html" class="Footer-menu">新闻中心</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="gsdt.html">公司动态</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="hyzx.html">行业活动</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="mtbd.html">媒体报道</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="qyjs.html" class="Footer-menu">关于我们</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="qyjs.html">企业介绍</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="zhzc.html">智慧征程</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="ppgs.html">品牌故事</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="hzts.html">合作探索</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Footer-friend">
+            <div class="contain flex">
+                <div class="Footer-friend-hint">友情链接：</div>
+                <div class="Footer-friend-link flex">
+                    
+<a href="https://www.sz-water.com.cn/" target="_blank" rel="noopener noreferrer">深圳环境水务集团</a>
+
+<a href="https://www.waterchina.com/" target="_blank" rel="noopener noreferrer">中国水星网</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="Footer-copyright">
+            <div class="contain flex">
+                <div class="info text flex">
+                    <p>Copyright © 2024 深圳市水务科技有限公司 All Rights Reserved</p>
+                    <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener noreferrer">粤ICP备12050185号</a></p>
+                </div>
+                <div class="info link flex">
+                    <p><a href="lawer.html">服务条款</a></p>
+                    <p><a href="yszc.html">隐私政策</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" nonce="JOYMAGIC">
+        $(function(){});
+        if(window.innerWidth >= 1000){
+            // $(".demo").addClass("wow fadeInUp").attr("data-wow-delay",'0.3s');
+            // $(".demo").addClass("wow clipRight").attr({"data-wow-delay":'0.4s',"data-wow-duration":"1.5s"});
+            // $(".demo").each(function(n){$(this).addClass("wow fadeInUp").attr("data-wow-delay",0.3+(n*0.1)+'s');});
+            // $(".demo").each(function(n){if(n>=3){n=n%3}$(this).addClass("wow fadeInUp").attr("data-wow-delay",0.3+(n*0.1)+'s');});
+        }else{
+            $(".serItem").addClass("wow fadeIn").attr("data-wow-delay",'0.1s');
+        }
+        wow = new WOW({boxClass: 'wow',animateClass: 'animated',offset: window.innerWidth >= 1000 ? 100 : 50,mobile: true,live: true});wow.init();
+    </script>
+</body>
+
+</html>

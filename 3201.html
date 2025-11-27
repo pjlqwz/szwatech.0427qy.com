@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html lang="zh-en">
+
+<head>
+    <title>Remote Terminal Unit（RTU）</title>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="keywords" content="Water Technologies,智能一体机,智慧水务,智慧原水,智慧厂站,智慧二供,智慧供水调度,智慧排水防汛,智慧流域">
+<meta name="description" content="An industrial-grade telemetry terminal that integrates data collection, storage, remote control, wireless communication, etc. It features high performance, low power consumption microcontrollers, and comprehensive functions for data collection, storage, control, alarm, and transmission. This prod">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,height=device-height,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="author" content="Joymagic - https://www.szmynet.com">
+<link rel="Shortcut Icon" href="/storage/other/20241010/1728526695849285.ico">
+<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+<link rel="stylesheet" type="text/css" href="static/css/animate.css">
+<link rel="stylesheet" type="text/css" href="static/css/common-20251126165926.css">
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery.cookie.js"></script>
+<script src="static/js/wow.js"></script>
+<script src="static/js/common-20251126165926.js"></script>
+<script src="https://en.sz-watech.com/static/admin/layui/layui.all.js"></script>
+<script src="static/js/admin.js"></script>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="static/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/pages-20251126170410.css">
+</head>
+
+<!-- class="Lucency noGap" -->
+
+<body>
+    <!-- Header -->
+    <div class="Header">
+        <div class="contain clearFix">
+            <a href="index1.html" class="Header-logo">
+                <img src="static/picture/logo.svg" alt="" class="s">
+                <img src="static/picture/logoH.svg" alt="" class="h">
+            </a>
+            <div class="Header-navclick clearFix"><span></span></div>
+            <div class="Header-zixun flex">
+                <a href="hqfa1.html" class="Header-zixun-btn flex-center ts4">
+                    <div class="icon flex-center pos">
+                        <img src="static/picture/zixun-icon3.png" class="pc" alt="">
+                        <img src="static/picture/zixun-icon3H.png" class="mb" alt="">
+                    </div>
+                    <div class="title fs15">Acquisition Plan</div>
+                </a>
+            </div>
+            <div class="Header-search">
+                <div class="Header-search-click"></div>
+                <div class="Header-search-item">
+                    <div class="contain">
+                        <form action="/search" method="get">
+                            <button type="submit" id="searchSubmit"></button>
+                            <input type="text" name="keyword" id="searchText" placeholder="Search..." autocomplete="off">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="Header-lang">
+                <a href="javascript:void(0);" class="Header-lang-menu"><i class="icon icon-w0412"></i><span>Language</span></a>
+                <div class="Header-lang-more">
+                    <a href="index.html" class="cn"><span>中文</span></a>
+                    <a href="index1.html" class="en"><span>EN</span></a>
+                </div>
+            </div>
+            <div class="Header-navbar clearFix">
+                <ul class="navbarScroll">
+                    <!-- 选中 li 添加class="active" -->
+                    <li class=""><a href="index1.html" class="Header-menu">Home</a></li>
+                    <!-- 方案和产品的下拉不一样 -->
+                    
+                    <li class="Header-solution ">
+                        <a href="solution1.html" class="Header-menu">Solution</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            <div class="Header-solution-wrap">
+                                <div class="Header-solution-data">
+                                    <div class="title">Smart Water-Related Affairs Solution</div>
+                                    <div class="lists">
+                                        <div class="ul">
+                                            
+                                            <div class="li"><a href="solution1.html#item1">Smart Raw Water Early-Warning & Management Solution</a></div>
+                                            
+                                            <div class="li"><a href="3001.html">Smart Plant/Station Solution</a></div>
+                                            
+                                            <div class="li"><a href="gsqlcddjjfa1.html">Water Supply Full-Process Scheduling Solution</a></div>
+                                            
+                                            <div class="li"><a href="/egbfzhhjjfa">Smart secondary water supply operation & maintenance solution</a></div>
+                                            
+                                            <div class="li"><a href="3071.html">Cloud Service Solution</a></div>
+                                            
+                                            <div class="li"><a href="3081.html">Urban Drainage & Flood Prevention Solution</a></div>
+                                            
+                                            <div class="li"><a href="/lyzlqyszhhjjfa">Smart Watershed Governance Solution</a></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Header-solution-imgs">
+                                    
+                                    <a href="3031.html">
+                                        <div class="img"><img src="https://en.sz-watech.com/storage/image/20241014/1728871445224217.webp" alt=""></div>
+                                        <div class="text lm1">Smart Water Plant 2.0 | The First Water Plant in Western Shenzhen Enters a New Era of Intelligence</div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="Header-product active">
+                        <a href="/hardware" class="Header-menu">WATECH Products</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            <div class="Header-product-wrap">
+                                
+                                <div class="item">
+                                    <div class="Header-product-data">
+                                        <div class="title"><a href="/factory#pro1">Smart Process Series Within Plant & Station</a></div>
+                                        <div class="lists">
+                                            <div class="ul">
+                                                
+                                                <div class="li"><a href="3141.html">Intelligent Dosing System for Water Plants</a></div>
+                                                
+                                                <div class="li"><a href="3121.html">Watech-Intelligent Aeration System</a></div>
+                                                
+                                                <div class="li"><a href="3111.html">Water Equipment Prediction Product and Health Management Service</a></div>
+                                                
+                                                <div class="li"><a href="3101.html">Intelligent Water Balance System</a></div>
+                                                
+                                                <div class="li"><a href="2341.html">Zooplankton Online Analyzer</a></div>
+                                                
+                                                <div class="li"><a href="3341.html">Algae Online Analyzer</a></div>
+                                                
+                                                <div class="li"><a href="2331.html">Smart Control Terminal For Pump Station</a></div>
+                                                
+                                                <div class="li"><a href="2321.html">Energy-Saving & Consumption-Reducing Controller For Secondary Water Supply</a></div>
+                                                
+                                                <div class="li"><a href="2311.html">Smart Control Cabinet</a></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="Header-product-data">
+                                        <div class="title"><a href="/water-affairs#pro2">Smart Water Monitoring Products</a></div>
+                                        <div class="lists">
+                                            <div class="ul">
+                                                
+                                                <div class="li"><a href="3231.html">Smart Fire Hydrant Monitor</a></div>
+                                                
+                                                <div class="li"><a href="3221.html">Smart Safety Helmet</a></div>
+                                                
+                                                <div class="li"><a href="3211.html">Smart Manhole Cover</a></div>
+                                                
+                                                <div class="li"><a href="">Remote Terminal Unit（RTU）</a></div>
+                                                
+                                                <div class="li"><a href="3191.html">Multi-parameter Water Quality Online Analyzer</a></div>
+                                                
+                                                <div class="li"><a href="3181.html">Smart Liquid Level Monitor</a></div>
+                                                
+                                                <div class="li"><a href="3171.html">Smart Drainage Flow Monitor</a></div>
+                                                
+                                                <div class="li"><a href="3161.html">Smart Pressure Monitor In Water Supply</a></div>
+                                                
+                                                <div class="li"><a href="3151.html">Smart Leakage Detector</a></div>
+                                                
+                                                <div class="li"><a href="3241.html">High-Frequency Pressure Monitor</a></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="Header-product-data">
+                                        <div class="title"><a href="/software">Smart Water Software Products</a></div>
+                                        <div class="lists">
+                                            <div class="ul">
+                                                
+                                                <div class="li"><a href="/software">Enterprise Digitalization Management</a></div>
+                                                
+                                                <div class="li"><a href="/software">Customer Service</a></div>
+                                                
+                                                <div class="li"><a href="/software">Production & Operation</a></div>
+                                                
+                                                <div class="li"><a href="/software">Basic Support</a></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <a href="/znxtjc" class="Header-menu">Integration & Services</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="/znxtjc">Intelligent System Integration</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/zhswfw">Smart Water Service</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="">
+                        <a href="/zhczal" class="Header-menu">Typical Case</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="/zhczal">Smart Plant</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/zhlyal">Smart Watershed Governance</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/szgcal">Municipal Engineering</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="">
+                        <a href="/news" class="Header-menu">News</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="/gsdt">Company News</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/hyzx">Industry Activities</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/mtbd">Media Reports</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="">
+                        <a href="/qyjs" class="Header-menu">About us</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="/qyjs">Company Introduction</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/zhzc">Journey to Smart Innovation</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/ppgs">Brand Story</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/hzts">Collaborative Exploration</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Container -->
+    <div class="Container">
+        <div class="proDet-view">
+            <div class="proDet-show pos pt130 pb150" style="background: url('static/image/proDet-show-bg.jpg') no-repeat center/cover;">
+                <div class="contain">
+                    <div class="proDet-show-flex flex">
+                        <div class="proDet-show-con">
+                            <div class="title fs48 fob black">Remote Terminal Unit（RTU）</div>
+                            <div class="text fs16 lh28 mt26">
+	An industrial-grade telemetry terminal that integrates data collection, storage, remote control, wireless communication, etc. It features high performance, low power consumption microcontrollers, and comprehensive functions for data collection, storage, control, alarm, and transmission. This product is widely used in IoT, smart cities, smart water management, and other fields.
+</div>
+<div class="list fs16 lh28 coh fob mt30">
+</div>
+                        </div>
+                        <div class="proDet-show-img flex-center"><img src="static/picture/1730199059489984.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proDet-GN section pt100 pb130">
+                <div class="contain">
+                    <div class="pagesHead flex">
+                        <div class="pagesTitle">
+                            <div class="title fs36 fob black">Product Features</div>
+                        </div>
+                        <div class="pagesNext flex">
+                            <div class="pagesNext-btn prev flex-center ts4 icon icon-w0024"></div>
+                            <div class="pagesNext-btn next flex-center ts4 icon icon-w0024"></div>
+                        </div>
+                    </div>
+                    <div class="proDet-GN-swp pos mt50">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                
+                                <div class="swiper-slide">
+                                    <div class="proDet-GN-slide">
+                                        <div class="icon"><img src="static/picture/1730188835444357.png" alt=""></div>
+                                        <div class="title fs24 fob c3 mt50">Multi-channel data acquisition, upload period can be customized</div>
+                                        <div class="text fs16 lh24 mt24"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="proDet-GN-slide">
+                                        <div class="icon"><img src="static/picture/1730171203670187.png" alt=""></div>
+                                        <div class="title fs24 fob c3 mt50">Plug-and-play communication module design for easy switching between NB/4G/5G</div>
+                                        <div class="text fs16 lh24 mt24"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="proDet-GN-slide">
+                                        <div class="icon"><img src="static/picture/1730188894906842.png" alt=""></div>
+                                        <div class="title fs24 fob c3 mt50">Data storage and resumption to ensure data continuity support</div>
+                                        <div class="text fs16 lh24 mt24"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="proDet-GN-slide">
+                                        <div class="icon"><img src="static/picture/1730188515645867.png" alt=""></div>
+                                        <div class="title fs24 fob c3 mt50">Multiple communication protocols TCP/UDP/MQTT support</div>
+                                        <div class="text fs16 lh24 mt24"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="proDet-GN-slide">
+                                        <div class="icon"><img src="https://en.sz-watech.com/storage/image/20241029/1730189006790210.png" alt=""></div>
+                                        <div class="title fs24 fob c3 mt50">Edge computing support for data filtering</div>
+                                        <div class="text fs16 lh24 mt24"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="pages-pagination center mt40 mb"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="proDet-app pos">	<div class="proDet-app-bg">		<img src="https://en.sz-watech.com/static/home/default/images/pages/proDet-app-bg.jpg" alt=""> 	</div>	<div class="proDet-app-con">		<div class="contain flex">			<div class="proDet-app-desc">				<div class="proDet-app-title fs36 fob black">					Application Effectiveness				</div>				<ul class="proDet-app-list mt20">					<li class="flex pt36 pb36">						<div class="icon">							<img src="static/picture/proDet-app-icon1.png" alt=""> 						</div>						<div class="desc">							<div class="text fs20 lh28 black fob">								More than 12,000 deployments, in Suzhou, Guangzhou, Shenzhen, Shandong, and other places.							</div>						</div>					</li>				</ul>			</div>		</div>	</div></div>
+            <div class="proDet-hot pt120 pb130">
+                <div class="contain">
+                    <div class="pagesHead flex">
+                        <div class="pagesTitle">
+                            <div class="title fs36 fob black">Products You Might Be Interested In</div>
+                            <div class="text fs16 mt14 lh28">We have developed a series of WATECH smart water intelligent products, integrating software and hardware to assist water plants and wastewater treatment plants in digital management.</div>
+                        </div>
+                        <div class="pagesNext flex">
+                            <div class="pagesNext-btn prev flex-center ts4 icon icon-w0024"></div>
+                            <div class="pagesNext-btn next flex-center ts4 icon icon-w0024"></div>
+                        </div>
+                    </div>
+                    <div class="proDet-hot-swp pos mt60">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                
+                                <div class="swiper-slide">
+                                    <a href="3231.html" class="proDet-hot-slide block">
+                                        <div class="title fs22 lh32 c3 fob lm lm3">Smart Fire Hydrant Monitor</div>
+                                        <div class="img flex-center mt40"><img src="static/picture/1730197922990161.webp" class="ts6" alt=""></div>
+                                        <div class="text fs14 lh24 lm lm2 mt40">Utilizing advanced IoT technology, the system provides comprehensive monitoring and alerts for hydrant water pressure, water usage, and hydrant conditions 24/7.</div>
+                                        <div class="more flex coh fs16 mt20"><span>Learn more</span><i class="icon icon-w0024"></i></div>
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="3221.html" class="proDet-hot-slide block">
+                                        <div class="title fs22 lh32 c3 fob lm lm3">Smart Safety Helmet</div>
+                                        <div class="img flex-center mt40"><img src="static/picture/1730198220501362.webp" class="ts6" alt=""></div>
+                                        <div class="text fs14 lh24 lm lm2 mt40">Through integration with the on-site intelligent control platform, it enables remote command, safety control, risk alerts, and ensures personnel safety.</div>
+                                        <div class="more flex coh fs16 mt20"><span>Learn more</span><i class="icon icon-w0024"></i></div>
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="3211.html" class="proDet-hot-slide block">
+                                        <div class="title fs22 lh32 c3 fob lm lm3">Smart Manhole Cover</div>
+                                        <div class="img flex-center mt40"><img src="static/picture/1730198892197588.webp" class="ts6" alt=""></div>
+                                        <div class="text fs14 lh24 lm lm2 mt40">It effectively addresses urban flood prevention, manhole-related injuries, etc., contributing to accelerated urban smart construction.</div>
+                                        <div class="more flex coh fs16 mt20"><span>Learn more</span><i class="icon icon-w0024"></i></div>
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="3191.html" class="proDet-hot-slide block">
+                                        <div class="title fs22 lh32 c3 fob lm lm3">Multi-parameter Water Quality Online Analyzer</div>
+                                        <div class="img flex-center mt40"><img src="static/picture/1730199307859143.webp" class="ts6" alt=""></div>
+                                        <div class="text fs14 lh24 lm lm2 mt40">This device utilizes electrode sensing technology and AI algorithms to achieve precise 24-hour measurement of turbidity, residual chlorine, conductivity, pH, temperature, and other water quality indicators. It provides rapid and efficient water quality assessment, and intelligent alerting for abnormal conditions exceeding standards, ensuring intelligent safeguarding of water supply quality.</div>
+                                        <div class="more flex coh fs16 mt20"><span>Learn more</span><i class="icon icon-w0024"></i></div>
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="3181.html" class="proDet-hot-slide block">
+                                        <div class="title fs22 lh32 c3 fob lm lm3">Smart Liquid Level Monitor</div>
+                                        <div class="img flex-center mt40"><img src="static/picture/1730199373718299.webp" class="ts6" alt=""></div>
+                                        <div class="text fs14 lh24 lm lm2 mt40">Designed for urban drainage networks, this integrated smart monitoring device utilizes embedded sensors and low-power design to monitor network liquid levels in real-time and transmit data remotely.</div>
+                                        <div class="more flex coh fs16 mt20"><span>Learn more</span><i class="icon icon-w0024"></i></div>
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="3171.html" class="proDet-hot-slide block">
+                                        <div class="title fs22 lh32 c3 fob lm lm3">Smart Drainage Flow Monitor</div>
+                                        <div class="img flex-center mt40"><img src="static/picture/1730199639188863.webp" class="ts6" alt=""></div>
+                                        <div class="text fs14 lh24 lm lm2 mt40">It features high measurement accuracy and a wide measurement range with high resolution and fast response.</div>
+                                        <div class="more flex coh fs16 mt20"><span>Learn more</span><i class="icon icon-w0024"></i></div>
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="3161.html" class="proDet-hot-slide block">
+                                        <div class="title fs22 lh32 c3 fob lm lm3">Smart Pressure Monitor In Water Supply</div>
+                                        <div class="img flex-center mt40"><img src="static/picture/1730199703880313.webp" class="ts6" alt=""></div>
+                                        <div class="text fs14 lh24 lm lm2 mt40">This device employs high-precision water pressure sensors for real-time monitoring of water pressure in network pipelines,and warning the water pressure anomaly. With good stability within a wide temperature range, it aims to prevent water pipe bursts and facilitate comprehensive scheduling.</div>
+                                        <div class="more flex coh fs16 mt20"><span>Learn more</span><i class="icon icon-w0024"></i></div>
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="3151.html" class="proDet-hot-slide block">
+                                        <div class="title fs22 lh32 c3 fob lm lm3">Smart Leakage Detector</div>
+                                        <div class="img flex-center mt40"><img src="static/picture/1730200065306510.png" class="ts6" alt=""></div>
+                                        <div class="text fs14 lh24 lm lm2 mt40">Based on the acoustic signal analysis of leakage vibration, a system composed of IoT and wireless hydrophone sensor arrays is employed to monitor and precisely locate leaks in real-time. This device effectively facilitating the analysis of pipeline leakage and eliminating potential hazards in pipeline.</div>
+                                        <div class="more flex coh fs16 mt20"><span>Learn more</span><i class="icon icon-w0024"></i></div>
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="3241.html" class="proDet-hot-slide block">
+                                        <div class="title fs22 lh32 c3 fob lm lm3">High-Frequency Pressure Monitor</div>
+                                        <div class="img flex-center mt40"><img src="static/picture/1730201231247844.webp" class="ts6" alt=""></div>
+                                        <div class="text fs14 lh24 lm lm2 mt40">This device can utilize foundational information such as pipeline structure, material, and diameter to assist in analyzing the operational status of the pipeline, thereby effectively reducing the risk of pipeline bursts.</div>
+                                        <div class="more flex coh fs16 mt20"><span>Learn more</span><i class="icon icon-w0024"></i></div>
+                                    </a>
+                                </div>
+                                
+                             </div>
+                        </div>
+                        <div class="pages-pagination center mt40 mb"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 置顶 -->
+    
+<div class="backTop"></div>
+    <!-- 公告弹窗 -->
+    <div class="SwNotice ">
+        <div class="SwNotice-contain">
+            <div class="SwNotice-close flex-center"><i class="icon icon-w0304"></i></div>
+            <div class="SwNotice-info">
+                <div class="title">Kind Tips</div>
+                <div class="text"></div>
+                <div class="other">Shenzhen Water Technology Co., Ltd.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <svg class="FooterWaves aos-init aos-animate" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto" aos="fade-up">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(229,246,246,0.5)"></use>
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(229,246,246,0.3)"></use>
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(229,246,246,0.1)"></use>
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(229,246,246,1)"></use>
+        </g>
+    </svg>
+    <div class="Footer">
+        <div class="Footer-items">
+            <div class="contain flex">
+                <div class="Footer-more">
+                    <div class="Footer-logo"><a href="index1.html"><img src="static/picture/logoH.png" alt=""></a></div>
+                    <div class="Footer-info">
+                        <p>Tel: </p>
+                        <h6>400-0755-664</h6>
+                        <p>Address: Floor 37, No.1 Lvgem,Hongshuwan, Shazui Road, Futian District, Shenzhen, Guangdong Prov, China.</p>
+                        <p></p>
+                    </div>
+                    <div class="Footer-code flex">
+                        <div class="item">
+                            <div class="img"><img src="static/picture/code1.jpg" alt=""></div>
+                            <div class="text">WeChat Public Accout </div>
+                        </div>
+                        <div class="item">
+                            <div class="img"><img src="static/picture/1740992106898361.jpg" alt=""></div>
+                            <div class="text">WeChat Consultation</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer-navbar">
+                    <ul class="flex">
+                        
+                        <li>
+                            <a href="solution1.html" class="Footer-menu">Solution</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="solution1.html#item1">Smart Raw Water Early-Warning & Management Solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="3001.html">Smart Plant/Station Solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="gsqlcddjjfa1.html">Water Supply Full-Process Scheduling Solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/egbfzhhjjfa">Smart secondary water supply operation & maintenance solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="3071.html">Cloud Service Solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="3081.html">Urban Drainage & Flood Prevention Solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/lyzlqyszhhjjfa">Smart Watershed Governance Solution</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/hardware" class="Footer-menu">WATECH Products</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="/hardware">Hardware and Software Integrated Products</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/software">Smart Water Software Products</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="/znxtjc" class="Footer-menu">Integration & Services</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="/znxtjc">Intelligent System Integration</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/zhswfw">Smart Water Service</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="/zhczal" class="Footer-menu">Typical Case</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="/zhczal">Smart Plant</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/zhlyal">Smart Watershed Governance</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/szgcal">Municipal Engineering</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="/news" class="Footer-menu">News</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="/gsdt">Company News</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/hyzx">Industry Activities</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/mtbd">Media Reports</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="/qyjs" class="Footer-menu">About us</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="/qyjs">Company Introduction</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/zhzc">Journey to Smart Innovation</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/ppgs">Brand Story</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/hzts">Collaborative Exploration</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Footer-friend">
+            <div class="contain flex">
+                <div class="Footer-friend-hint">Links: </div>
+                <div class="Footer-friend-link flex">
+                    
+<a href="https://www.sz-water.com.cn" target="_blank" rel="noopener noreferrer">Shenzhen Water and Environment Group</a>
+
+<a href="https://www.waterchina.com" target="_blank" rel="noopener noreferrer">中国水星网</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="Footer-copyright">
+            <div class="contain flex">
+                <div class="info text flex">
+                    <p>Copyright © 2024 Shenzhen Water Technology Co., Ltd. All Rights Reserved</p>
+                    <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener noreferrer">ICP:12050185</a></p>
+                </div>
+                <div class="info link flex">
+                    <p><a href="/lawer">Terms of Service</a></p>
+                    <p><a href="/yszc">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="static/js/swiper.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var hotSwiper = new Swiper('.proDet-hot-swp .swiper-container', {
+                slidesPerView: 3, spaceBetween: 0, speed: 800,
+                pagination: { el: '.proDet-hot .pages-pagination', clickable: true, },
+                navigation: { nextEl: '.proDet-hot .pagesNext-btn.next', prevEl: '.proDet-hot .pagesNext-btn.prev', },
+                breakpoints: {
+                    1599: { spaceBetween: 0 },
+                    1279: { spaceBetween: 0 },
+                    640: { slidesPerView: 1, spaceBetween: 0 },
+                },
+            });
+            var gnSwiper = new Swiper('.proDet-GN-swp .swiper-container', {
+                slidesPerView: 3, spaceBetween: 0, speed: 800,
+                pagination: { el: '.proDet-GN .pages-pagination', clickable: true, },
+                navigation: { nextEl: '.proDet-GN .pagesNext-btn.next', prevEl: '.proDet-GN .pagesNext-btn.prev', },
+                breakpoints: {
+                    1599: { spaceBetween: 0 },
+                    1279: { spaceBetween: 0 },
+                    640: { slidesPerView: 1, spaceBetween: 0 },
+                },
+            });
+        });
+        if (window.innerWidth >= 1000) {
+            $(".proDet-show-con").addClass("wow fadeInLeft").attr("data-wow-delay",'0.3s');
+            $(".proDet-show-img").addClass("wow fadeInRight").attr("data-wow-delay",'0.3s');
+            $(".pagesHead,.proDet-app-desc").addClass("wow fadeInUp").attr("data-wow-delay",'0.3s');
+            // $(".demo").addClass("wow clipRight").attr({"data-wow-delay":'0.4s',"data-wow-duration":"1.5s"});
+            $(".proDet-GN-swp .swiper-slide").each(function(n){$(this).addClass("wow fadeInUp").attr("data-wow-delay",0.4+(n*0.15)+'s');});
+            $(".proDet-hot-swp .swiper-slide").each(function(n){$(this).addClass("wow fadeInUp").attr("data-wow-delay",0.4+(n*0.15)+'s');});
+            // $(".demo").each(function(n){if(n>=3){n=n%3}$(this).addClass("wow fadeInUp").attr("data-wow-delay",0.3+(n*0.1)+'s');});
+        } else {
+            $(".proDet-show-con,.proDet-show-img,.pagesHead,.proDet-app,.proDet-GN-swp,.proDet-hot-swp").addClass("wow fadeIn").attr("data-wow-delay",'0s');
+        }
+        wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: window.innerWidth >= 1000 ? 100 : 50, mobile: true, live: true }); wow.init();
+    </script>
+</body>
+
+</html>

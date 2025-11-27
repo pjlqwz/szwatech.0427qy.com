@@ -1,0 +1,793 @@
+﻿<!DOCTYPE html>
+<html lang="zh-en">
+
+<head>
+    <title>Cloud Service Solution</title>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="keywords" content="Water Technologies,智能一体机,智慧水务,智慧原水,智慧厂站,智慧二供,智慧供水调度,智慧排水防汛,智慧流域">
+<meta name="description" content="Integrate the Installation Management, Business Income, Remote Meter Management, Customer Service Work Order, Online Business Hall, Call Centre And Intelligent Customer Service, Consumer Internet and other discrete systems to provide enterprises with a customer service platform covering the whole">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,height=device-height,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="author" content="Joymagic - https://www.szmynet.com">
+<link rel="Shortcut Icon" href="/storage/other/20241010/1728526695849285.ico">
+<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+<link rel="stylesheet" type="text/css" href="static/css/animate.css">
+<link rel="stylesheet" type="text/css" href="static/css/common-20251126165926.css">
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery.cookie.js"></script>
+<script src="static/js/wow.js"></script>
+<script src="static/js/common-20251126165926.js"></script>
+<script src="https://en.sz-watech.com/static/admin/layui/layui.all.js"></script>
+<script src="static/js/admin.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="static/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/pages-20251126170410.css">
+</head>
+
+<body class="Lucency noGap">
+    <!-- Header -->
+    <div class="Header">
+        <div class="contain clearFix">
+            <a href="index1.html" class="Header-logo">
+                <img src="static/picture/logo.svg" alt="" class="s">
+                <img src="static/picture/logoH.svg" alt="" class="h">
+            </a>
+            <div class="Header-navclick clearFix"><span></span></div>
+            <div class="Header-zixun flex">
+                <a href="hqfa1.html" class="Header-zixun-btn flex-center ts4">
+                    <div class="icon flex-center pos">
+                        <img src="static/picture/zixun-icon3.png" class="pc" alt="">
+                        <img src="static/picture/zixun-icon3H.png" class="mb" alt="">
+                    </div>
+                    <div class="title fs15">Acquisition Plan</div>
+                </a>
+            </div>
+            <div class="Header-search">
+                <div class="Header-search-click"></div>
+                <div class="Header-search-item">
+                    <div class="contain">
+                        <form action="/search" method="get">
+                            <button type="submit" id="searchSubmit"></button>
+                            <input type="text" name="keyword" id="searchText" placeholder="Search..." autocomplete="off">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="Header-lang">
+                <a href="javascript:void(0);" class="Header-lang-menu"><i class="icon icon-w0412"></i><span>Language</span></a>
+                <div class="Header-lang-more">
+                    <a href="index.html" class="cn"><span>中文</span></a>
+                    <a href="index1.html" class="en"><span>EN</span></a>
+                </div>
+            </div>
+            <div class="Header-navbar clearFix">
+                <ul class="navbarScroll">
+                    <!-- 选中 li 添加class="active" -->
+                    <li class=""><a href="index1.html" class="Header-menu">Home</a></li>
+                    <!-- 方案和产品的下拉不一样 -->
+                    
+                    <li class="Header-solution active">
+                        <a href="solution1.html" class="Header-menu">Solution</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            <div class="Header-solution-wrap">
+                                <div class="Header-solution-data">
+                                    <div class="title">Smart Water-Related Affairs Solution</div>
+                                    <div class="lists">
+                                        <div class="ul">
+                                            
+                                            <div class="li"><a href="solution1.html#item1">Smart Raw Water Early-Warning & Management Solution</a></div>
+                                            
+                                            <div class="li"><a href="3001.html">Smart Plant/Station Solution</a></div>
+                                            
+                                            <div class="li"><a href="gsqlcddjjfa1.html">Water Supply Full-Process Scheduling Solution</a></div>
+                                            
+                                            <div class="li"><a href="/egbfzhhjjfa">Smart secondary water supply operation & maintenance solution</a></div>
+                                            
+                                            <div class="li"><a href="">Cloud Service Solution</a></div>
+                                            
+                                            <div class="li"><a href="3081.html">Urban Drainage & Flood Prevention Solution</a></div>
+                                            
+                                            <div class="li"><a href="/lyzlqyszhhjjfa">Smart Watershed Governance Solution</a></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Header-solution-imgs">
+                                    
+                                    <a href="3031.html">
+                                        <div class="img"><img src="https://en.sz-watech.com/storage/image/20241014/1728871445224217.webp" alt=""></div>
+                                        <div class="text lm1">Smart Water Plant 2.0 | The First Water Plant in Western Shenzhen Enters a New Era of Intelligence</div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="Header-product ">
+                        <a href="/hardware" class="Header-menu">WATECH Products</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            <div class="Header-product-wrap">
+                                
+                                <div class="item">
+                                    <div class="Header-product-data">
+                                        <div class="title"><a href="/factory#pro1">Smart Process Series Within Plant & Station</a></div>
+                                        <div class="lists">
+                                            <div class="ul">
+                                                
+                                                <div class="li"><a href="3141.html">Intelligent Dosing System for Water Plants</a></div>
+                                                
+                                                <div class="li"><a href="3121.html">Watech-Intelligent Aeration System</a></div>
+                                                
+                                                <div class="li"><a href="3111.html">Water Equipment Prediction Product and Health Management Service</a></div>
+                                                
+                                                <div class="li"><a href="3101.html">Intelligent Water Balance System</a></div>
+                                                
+                                                <div class="li"><a href="2341.html">Zooplankton Online Analyzer</a></div>
+                                                
+                                                <div class="li"><a href="3341.html">Algae Online Analyzer</a></div>
+                                                
+                                                <div class="li"><a href="2331.html">Smart Control Terminal For Pump Station</a></div>
+                                                
+                                                <div class="li"><a href="2321.html">Energy-Saving & Consumption-Reducing Controller For Secondary Water Supply</a></div>
+                                                
+                                                <div class="li"><a href="2311.html">Smart Control Cabinet</a></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="Header-product-data">
+                                        <div class="title"><a href="/water-affairs#pro2">Smart Water Monitoring Products</a></div>
+                                        <div class="lists">
+                                            <div class="ul">
+                                                
+                                                <div class="li"><a href="3231.html">Smart Fire Hydrant Monitor</a></div>
+                                                
+                                                <div class="li"><a href="3221.html">Smart Safety Helmet</a></div>
+                                                
+                                                <div class="li"><a href="3211.html">Smart Manhole Cover</a></div>
+                                                
+                                                <div class="li"><a href="3201.html">Remote Terminal Unit（RTU）</a></div>
+                                                
+                                                <div class="li"><a href="3191.html">Multi-parameter Water Quality Online Analyzer</a></div>
+                                                
+                                                <div class="li"><a href="3181.html">Smart Liquid Level Monitor</a></div>
+                                                
+                                                <div class="li"><a href="3171.html">Smart Drainage Flow Monitor</a></div>
+                                                
+                                                <div class="li"><a href="3161.html">Smart Pressure Monitor In Water Supply</a></div>
+                                                
+                                                <div class="li"><a href="3151.html">Smart Leakage Detector</a></div>
+                                                
+                                                <div class="li"><a href="3241.html">High-Frequency Pressure Monitor</a></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="Header-product-data">
+                                        <div class="title"><a href="/software">Smart Water Software Products</a></div>
+                                        <div class="lists">
+                                            <div class="ul">
+                                                
+                                                <div class="li"><a href="/software">Enterprise Digitalization Management</a></div>
+                                                
+                                                <div class="li"><a href="/software">Customer Service</a></div>
+                                                
+                                                <div class="li"><a href="/software">Production & Operation</a></div>
+                                                
+                                                <div class="li"><a href="/software">Basic Support</a></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <a href="/znxtjc" class="Header-menu">Integration & Services</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="/znxtjc">Intelligent System Integration</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/zhswfw">Smart Water Service</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="">
+                        <a href="/zhczal" class="Header-menu">Typical Case</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="/zhczal">Smart Plant</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/zhlyal">Smart Watershed Governance</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/szgcal">Municipal Engineering</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="">
+                        <a href="/news" class="Header-menu">News</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="/gsdt">Company News</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/hyzx">Industry Activities</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/mtbd">Media Reports</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="">
+                        <a href="/qyjs" class="Header-menu">About us</a>
+                        <i class="Header-arrow"></i>
+                        <div class="Header-drop">
+                            
+                            <div class="Header-drop-menu"><a href="/qyjs">Company Introduction</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/zhzc">Journey to Smart Innovation</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/ppgs">Brand Story</a></div>
+                            
+                            <div class="Header-drop-menu"><a href="/hzts">Collaborative Exploration</a></div>
+                            
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Container -->
+    <div class="Container">
+        <div class="pagesTop pos">
+            <div class="pagesBan pos">
+                <div class="pagesBan-bg">
+                    <img src="https://en.sz-watech.com/storage/image/20241120/1732095113815031.jpg" alt="">
+                    <video src="" autoplay loop preload="auto" muted x-webkit-airplay="true" airplay="allow" webkit-playsinline="true" playsinline="true" x5-video-player-fullscreen="true" x5-video-player-type="h5" x5-video-orientation="portraint"></video>
+                </div>
+                <div class="pagesBan-con">
+                    <div class="contain flex-center white">
+                        <div class="title fs48 fob">Cloud Service Solution</div>
+                        <div class="text fs18 mt10">Provide services to citizens through multiple channels, and create a "pocket business hall" with "no errands, clear progress, easy service".</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagesNav">
+                <div class="contain">
+                    <div class="pagesNav-list flex-center white fs18">
+                    	
+                        
+                        <a href="solution1.html#item1" class=" item flex-center pos"><span>Smart Raw Water Management</span></a>
+                        
+                        <a href="3001.html" class=" item flex-center pos"><span>Smart Plant / Station Operation</span></a>
+                        
+                        <a href="gsqlcddjjfa1.html" class=" item flex-center pos"><span>Water Supply Scheduling</span></a>
+                        
+                        <a href="/egbfzhhjjfa" class=" item flex-center pos"><span>Smart Secondary Water Supply</span></a>
+                        
+                        <a href="" class="active item flex-center pos"><span>Cloud Service</span></a>
+                        
+                        <a href="3081.html" class=" item flex-center pos"><span>Urban Drainage & Flood  Prevention</span></a>
+                        
+                        <a href="/lyzlqyszhhjjfa" class=" item flex-center pos"><span>Smart Watershed Governance</span></a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="factory-view">
+            <div class="facIntro pt100 pb100">
+                <div class="contain">
+                    
+                    <div class="facIntro-desc center">
+                    	<div class="title fs36 fob black">
+                    		Cloud Service Solution
+                    	</div>
+                    	<div class="text fs16 lh28 mt20">
+	Integrate the Installation Management, Business Income, Remote Meter Management, Customer Service Work Order, Online Business Hall, Call Centre And Intelligent Customer Service, Consumer Internet and other discrete systems to provide enterprises with a customer service platform covering the whole scene, provide services to citizens through multiple channels, and create a "pocket business hall" with "no errands, clear progress, easy service".
+</div>
+<div class="img mt40 center">
+	<img src="static/picture/1732184157972445.png" alt=""> 
+</div>
+                    </div>
+                    
+                    <ul class="facIntro-list ovh flex">
+                        
+                        <li>
+                            <div class="icon"><img src="static/picture/facIntro-icon1.png" alt=""></div>
+                            <div class="text fs16 lh28 fob mt20">Modular configuration</div>
+                        </li>
+                        
+                        <li>
+                            <div class="icon"><img src="static/picture/1730113378527447.png" alt=""></div>
+                            <div class="text fs16 lh28 fob mt20">Low deployment cost</div>
+                        </li>
+                        
+                        <li>
+                            <div class="icon"><img src="static/picture/facIntro-icon6.png" alt=""></div>
+                            <div class="text fs16 lh28 fob mt20">Customized APP</div>
+                        </li>
+                        
+                        <li>
+                            <div class="icon"><img src="static/picture/facIntro-icon2.png" alt=""></div>
+                            <div class="text fs16 lh28 fob mt20">Easy to use</div>
+                        </li>
+                        
+                        <li>
+                            <div class="icon"><img src="static/picture/facIntro-icon3.png" alt=""></div>
+                            <div class="text fs16 lh28 fob mt20">Easy</div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="facData">
+                
+                <div class="facData-module pt100 pb100">
+                    <div class="contain">
+                        <div class="facData-flex flex">
+                            <div class="facData-img pos">
+                                <div class="facData-img-bg pos"><img src="static/picture/1730369926733401.webp" alt=""></div>
+                                <ul class="facData-img-num number flex white">
+                                    
+                                </ul>
+                            </div>
+                            <div class="facData-con">
+                                <div class="facData-con-title fs36 fob black">In future, this solution will cover Shenzhen Water and Environment Group's</div>
+                                <ul class="facData-con-num flex number">
+	<li class="mt30">
+		<div class="num fmb fs40 coh">
+			<span class="timer">22</span> Cities 
+		</div>
+		<div class="text fs16 lh28">
+			7 Provinces 
+		</div>
+	</li>
+	<li class="mt30">
+		<div class="num fmb fs40 coh">
+			<span class="timer">39</span> 
+		</div>
+		<div class="text fs16 lh28">
+			Investment Projects
+		</div>
+	</li>
+</ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="facData-module pt100 pb100">
+                    <div class="contain">
+                        <div class="facData-flex flex">
+                            <div class="facData-img pos">
+                                <div class="facData-img-bg pos"><img src="static/picture/1732184310470445.webp" alt=""></div>
+                                <ul class="facData-img-num number flex white">
+                                    
+                                </ul>
+                            </div>
+                            <div class="facData-con">
+                                <div class="facData-con-title fs36 fob black">Solution has covered 2 cities in China</div>
+                                <ul class="facData-con-num flex number">
+	<li class="mt30">
+		<div class="num fmb fs40 coh">
+			<span class="timer">70 </span> million people  
+		</div>
+		<div class="text fs16 lh28">
+			Changxing City, Zhejiang Province Serving
+		</div>
+	</li>
+	<li class="mt30">
+		<div class="num fmb fs40 coh">
+			Over  <span class="timer">250 </span> million people
+		</div>
+		<div class="text fs16 lh28">
+			Xuancheng City, Anhui Province Serving
+		</div>
+	</li>
+</ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="solDet-YS facYS pos hideDiv1" id="hideDiv1">
+                <div class="solDet-YS-bg"><img src="https://en.sz-watech.com/static/home/default/images/pages/facYS-bg.jpg" alt=""></div>
+                <div class="proDet-GN section pt100 pb100">
+                    <div class="contain">
+                        <div class="pagesHead flex">
+                            <div class="pagesTitle">
+                                <div class="title fs36 fob white">Key Features of the Solution</div>
+                            </div>
+                            <div class="pagesNext flex">
+                                <div class="pagesNext-btn prev flex-center ts4 icon icon-w0024"></div>
+                                <div class="pagesNext-btn next flex-center ts4 icon icon-w0024"></div>
+                            </div>
+                        </div>
+                        <div class="proDet-GN-swp pos mt50">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="pages-pagination center mt40 mb"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                yincang2('hideDiv1');
+            </script>
+            <div class="facFZ section pt100 pb100 hideDiv">
+                <div class="facFZ-bg"><img src="static/picture/facFZ-bg.png" alt=""></div>
+                <svg class="facFZ-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 609 1628.14">
+                    <defs>
+                        <style>
+                            .cls-1,
+                            .cls-2 {
+                                fill: none;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-width: 30px;
+                            }
+
+                            .cls-1 {
+                                stroke: url(https://en.sz-watech.com/ykfjjfa/307.html);
+                            }
+
+                            .cls-2 {
+                                stroke: url(https://en.sz-watech.com/ykfjjfa/307.html);
+                            }
+                        </style>
+                        <lineargradient id="未命名的渐变_29" x1="-874" y1="476.93" x2="-606.37" y2="476.93" gradientunits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" stop-opacity="0.5"></stop>
+                            <stop offset="1" stop-color="#00a5a8"></stop>
+                        </lineargradient>
+                        <lineargradient id="未命名的渐变_29-2" x1="-265" y1="-169.18" x2="-636.37" y2="-169.18" xlink:href="https://en.sz-watech.com/ykfjjfa/307.html"></lineargradient>
+                    </defs>
+                    <title>线条</title>
+                    <g id="图层_2" data-name="图层 2">
+                        <path class="cls-1 path1" d="M-859-318s193-41,233.21,135.09c3.31,14.48,4.42,29.38,4.42,44.23V1276" transform="translate(874 337.14)"></path>
+                    </g>
+                    <g id="图层_3" data-name="图层 3">
+                        <path class="cls-2 path2" d="M-280-276.21S-540.75-329-621.37-58" transform="translate(874 337.14)"></path>
+                    </g>
+                </svg>
+                <div class="facFZ-con">
+                    <div class="contain">
+                        <div class="pagesTitle center">
+                            <div class="title fs36 fob black">Smart Plant/Station Technical & Construction Standard from Shenzhen Water Technologies Co., Ltd</div>
+                            <div class="text fs18 lh28 mt20">Nearly 10 years of plant digitization upgrade and 25 years automatic control experience, we have deeply analyzed the Smart Plant/station Solution "1.0-2.0-3.0" Construction Plan that can be evaluated and dismantled, and the planning has avoided repeated cost input to ensure the practical implementation.</div>
+                        </div>
+                        <div class="facFZ-list">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- 详情弹窗 -->
+    <div class="casePop-box">
+        <div class="casePop">
+            <div class="casePop-head white bgh flex">
+                <div class="title fs32 fob" id="ldtitle"></div>
+                <div class="close flex-center ts4 icon icon-w0301"></div>
+            </div>
+            <div class="casePop-con">
+                <div class="casePop-scroll scroll">
+                    <!-- 编辑器 -->
+                    <div class="casePop-text br fs16 lh28 mt30" id="ldcontent">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 置顶 -->
+    
+<div class="backTop"></div>
+    <!-- 公告弹窗 -->
+    <div class="SwNotice ">
+        <div class="SwNotice-contain">
+            <div class="SwNotice-close flex-center"><i class="icon icon-w0304"></i></div>
+            <div class="SwNotice-info">
+                <div class="title">Kind Tips</div>
+                <div class="text"></div>
+                <div class="other">Shenzhen Water Technology Co., Ltd.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <svg class="FooterWaves aos-init aos-animate" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto" aos="fade-up">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(229,246,246,0.5)"></use>
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(229,246,246,0.3)"></use>
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(229,246,246,0.1)"></use>
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(229,246,246,1)"></use>
+        </g>
+    </svg>
+    <div class="Footer">
+        <div class="Footer-items">
+            <div class="contain flex">
+                <div class="Footer-more">
+                    <div class="Footer-logo"><a href="index1.html"><img src="static/picture/logoH.png" alt=""></a></div>
+                    <div class="Footer-info">
+                        <p>Tel: </p>
+                        <h6>400-0755-664</h6>
+                        <p>Address: Floor 37, No.1 Lvgem,Hongshuwan, Shazui Road, Futian District, Shenzhen, Guangdong Prov, China.</p>
+                        <p></p>
+                    </div>
+                    <div class="Footer-code flex">
+                        <div class="item">
+                            <div class="img"><img src="static/picture/code1.jpg" alt=""></div>
+                            <div class="text">WeChat Public Accout </div>
+                        </div>
+                        <div class="item">
+                            <div class="img"><img src="static/picture/1740992106898361.jpg" alt=""></div>
+                            <div class="text">WeChat Consultation</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer-navbar">
+                    <ul class="flex">
+                        
+                        <li>
+                            <a href="solution1.html" class="Footer-menu">Solution</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="solution1.html#item1">Smart Raw Water Early-Warning & Management Solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="3001.html">Smart Plant/Station Solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="gsqlcddjjfa1.html">Water Supply Full-Process Scheduling Solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/egbfzhhjjfa">Smart secondary water supply operation & maintenance solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="">Cloud Service Solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="3081.html">Urban Drainage & Flood Prevention Solution</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/lyzlqyszhhjjfa">Smart Watershed Governance Solution</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/hardware" class="Footer-menu">WATECH Products</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="/hardware">Hardware and Software Integrated Products</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/software">Smart Water Software Products</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="/znxtjc" class="Footer-menu">Integration & Services</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="/znxtjc">Intelligent System Integration</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/zhswfw">Smart Water Service</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="/zhczal" class="Footer-menu">Typical Case</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="/zhczal">Smart Plant</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/zhlyal">Smart Watershed Governance</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/szgcal">Municipal Engineering</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="/news" class="Footer-menu">News</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="/gsdt">Company News</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/hyzx">Industry Activities</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/mtbd">Media Reports</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="/qyjs" class="Footer-menu">About us</a>
+                            <i class="Footer-arrow"></i>
+                            <div class="Footer-drop">
+                                
+                                <div class="Footer-drop-menu"><a href="/qyjs">Company Introduction</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/zhzc">Journey to Smart Innovation</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/ppgs">Brand Story</a></div>
+                                
+                                <div class="Footer-drop-menu"><a href="/hzts">Collaborative Exploration</a></div>
+                                
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Footer-friend">
+            <div class="contain flex">
+                <div class="Footer-friend-hint">Links: </div>
+                <div class="Footer-friend-link flex">
+                    
+<a href="https://www.sz-water.com.cn" target="_blank" rel="noopener noreferrer">Shenzhen Water and Environment Group</a>
+
+<a href="https://www.waterchina.com" target="_blank" rel="noopener noreferrer">中国水星网</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="Footer-copyright">
+            <div class="contain flex">
+                <div class="info text flex">
+                    <p>Copyright © 2024 Shenzhen Water Technology Co., Ltd. All Rights Reserved</p>
+                    <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener noreferrer">ICP:12050185</a></p>
+                </div>
+                <div class="info link flex">
+                    <p><a href="/lawer">Terms of Service</a></p>
+                    <p><a href="/yszc">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/anime.min.js"></script>
+    <script src="static/js/gsap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/numRoll.js"></script>
+    <script type="text/javascript">
+        $(function () {
+             $('.casePop-on').click(function(){
+                 var title=$(this).attr('data-title');
+                 var content=$(this).find('.more-content').html();
+                 $('#ldtitle').html(title);
+                 $('#ldcontent').html(content);
+                 $('.casePop-box').fadeIn(300);
+                 $('html,body').css("overflow","hidden");
+            })
+        
+            $(document).on('click','.casePop-head .close',function(){
+                
+                $('.casePop-box').fadeOut(300);
+                $('html,body').css("overflow","");
+                $('#ldtitle').html('');
+                $('#ldcontent').html('');
+            }) 
+    
+            if(window.innerWidth>1000){
+                anime({ targets: ".facFZ-svg path", strokeDashoffset: [0, anime.setDashoffset], easing: 'linear', loop: false, duration: 0, delay: 0 });
+                var stroke = [];
+                var pathOn = true;
+                $('.facFZ-svg path').each(function () {
+                    stroke.push($(this).attr('stroke-dasharray'))
+                })
+                lineFn();
+                function lineFn() {
+                    var winTop = $(window).scrollTop() + $('.Header').height() + $(window).innerHeight() * 0.8;
+                    var divTop = $('.facFZ-con').offset().top;
+                    var divH = $('.facFZ-con').innerHeight();
+                    var divH2 = window.innerWidth * 0.2;
+                    var bili = 1 - (winTop - divTop) / divH;
+                    var bili2 = 1 - (winTop - divTop) / divH2;
+                    console.log(bili);
+                    if (bili <= 0.75) { $('.facFZ-item-left .dot').eq(0).addClass('active') } else { $('.facFZ-item-left .dot').eq(0).removeClass('active') }
+                    if (bili <= 0.5) { $('.facFZ-item-left .dot').eq(1).addClass('active') } else { $('.facFZ-item-left .dot').eq(1).removeClass('active') }
+                    if (bili <= 0.2) { $('.facFZ-item-left .dot').eq(2).addClass('active') } else { $('.facFZ-item-left .dot').eq(2).removeClass('active') }
+    
+                    anime({
+                        targets: '.facFZ-svg .path1',
+                        strokeDashoffset: [0, stroke[0] * bili],
+                        easing: 'linear', loop: false, duration: 0, delay: 500,
+                    });
+                    
+                    
+                    
+                    if (bili2 < 0) { bili2 = 0 }
+                    anime({
+                        targets: '.facFZ-svg .path2',
+                        strokeDashoffset: [0, stroke[1] * bili2],
+                        easing: 'linear', loop: false, duration: 0, delay: 500,
+                    });
+    
+                    
+                }
+                $(window).scroll(function () {
+                    lineFn();
+                });
+            }
+            var hotSwiper = new Swiper('.proDet-hot-swp .swiper-container', {
+                slidesPerView: 3, spaceBetween: 0, speed: 800,
+                pagination: { el: '.proDet-hot .pages-pagination', clickable: true, },
+                navigation: { nextEl: '.proDet-hot .pagesNext-btn.next', prevEl: '.proDet-hot .pagesNext-btn.prev', },
+                breakpoints: {
+                    1599: { spaceBetween: 0 },
+                    1279: { spaceBetween: 0 },
+                    640: { slidesPerView: 1, spaceBetween: 0 },
+                },
+            });
+            $('.facData-img-num').each(function () {
+                $(this).addClass('list' + $(this).find('li').length);
+            });
+            var gnSwiper = new Swiper('.proDet-GN-swp .swiper-container', { 
+                slidesPerView: 3.5, spaceBetween: 40, speed: 800,
+                pagination: { el: '.proDet-GN .pages-pagination', clickable: true, },
+                navigation: { nextEl: '.proDet-GN .pagesNext-btn.next', prevEl: '.proDet-GN .pagesNext-btn.prev', },
+                breakpoints: {
+                    1599: { spaceBetween: 30 },
+                    1279: { spaceBetween: 20 },
+                    640: { slidesPerView: 1, spaceBetween: 10 },
+                },
+            });
+        });
+        if (window.innerWidth >= 1000) {
+            $(".facData-img").addClass("wow fadeInLeft").attr("data-wow-delay",'0.3s');
+            $(".facData-con").addClass("wow fadeInRight").attr("data-wow-delay",'0.3s');
+            $(".facIntro-desc .title,.pagesHead,.facFZ-con .pagesTitle,.facFZ-item-left .page,.facFZ-item-right,.facFZ-item-left .title,.facFZ-item-left .text").addClass("wow fadeInUp").attr("data-wow-delay",'0.3s');
+            $(".facIntro-desc .text").addClass("wow fadeInUp").attr("data-wow-delay",'0.4s');
+            $(".facIntro-desc .img").addClass("wow fadeInUp").attr("data-wow-delay",'0.5s');
+            // $(".demo").addClass("wow clipRight").attr({"data-wow-delay":'0.4s',"data-wow-duration":"1.5s"});
+            $(".facIntro-list li").each(function(n){$(this).addClass("wow fadeInUp").attr("data-wow-delay",0.3+(n*0.1)+'s');});
+            $(".proDet-GN-swp .swiper-slide").each(function(n){$(this).addClass("wow fadeInUp").attr("data-wow-delay",0.4+(n*0.15)+'s');});
+            $(".proDet-hot-swp .swiper-slide").each(function(n){$(this).addClass("wow fadeInUp").attr("data-wow-delay",0.4+(n*0.15)+'s');});
+            // $(".demo").each(function(n){if(n>=3){n=n%3}$(this).addClass("wow fadeInUp").attr("data-wow-delay",0.3+(n*0.1)+'s');});
+        } else {
+            $(".facIntro-desc,.facIntro-list li,.facData-img,.facData-con,.pagesHead,.proDet-GN-swp,.proDet-hot-swp,.facFZ-con .pagesTitle,.facFZ-item-left,.facFZ-item-right").addClass("wow fadeIn").attr("data-wow-delay",'0.1s');
+        }
+        wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: window.innerWidth >= 1000 ? 100 : 50, mobile: true, live: true }); wow.init();
+    </script>
+</body>
+
+</html>
